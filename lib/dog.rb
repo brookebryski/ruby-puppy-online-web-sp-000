@@ -18,10 +18,14 @@ class Dog
     end
   end
 
+  def clear_all
+    @@all = []
+  end
+
   def save
       @@all << self
   end
-  
+
   def name
     @name
   end
