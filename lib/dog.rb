@@ -4,7 +4,7 @@ class Dog
   @@all = []
 
   def initialize
-    @@all << self
+    @save = save
   end
 
   def all
@@ -15,5 +15,9 @@ class Dog
     array.each do |name|
       puts "#{name}"
     end
+  end
+
+  def save
+      @@all << self
   end
 end
