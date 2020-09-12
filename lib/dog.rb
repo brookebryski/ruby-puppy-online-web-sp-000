@@ -8,17 +8,17 @@ class Dog
     self.save
   end
 
-  def all
+  def self.all
     @@all
   end
 
-  def print_all(array)
+  def self.print_all(array)
     array.each do |name|
       puts "#{name}"
     end
   end
 
-  def clear_all
+  def self.clear_all
     @@all = []
   end
 
